@@ -12,7 +12,7 @@
 
         public string UserId { get; set; }
 
-        public FeaturedDto Feature { get; set; }
+        public FeatureDto Feature { get; set; }
 
         public string CategoryId { get; set; }
     }
