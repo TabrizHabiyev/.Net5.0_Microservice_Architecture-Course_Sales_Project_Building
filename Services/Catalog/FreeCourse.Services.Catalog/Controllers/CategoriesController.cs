@@ -18,6 +18,7 @@ namespace FreeCourse.Services.Catalog.Controllers
             _categoryServices = categoryServices;
         }
 
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var response = await _categoryServices.GetAllAsync();
