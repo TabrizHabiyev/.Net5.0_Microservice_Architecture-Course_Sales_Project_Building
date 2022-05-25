@@ -2,7 +2,7 @@
 
 namespace FreeCourse.Services.Catalog.Dtos
 {
-    public class CourceDto
+    public class CourseDto
     {
 
         public string Id { get; set; }

@@ -1,3 +1,4 @@
+using FreeCourse.Services.Catalog.Services;
 using FreeCourse.Services.Catalog.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,7 +29,9 @@ namespace FreeCourse.Services.Catalog
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddAutoMapper(typeof(Startup));
+            services.AddScoped<ICategoryServices, CategoryServices>();
+            services.AddScoped<ICourseServices,CourseService>();
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
 
             services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
@@ -36,6 +39,8 @@ namespace FreeCourse.Services.Catalog
             {
                 return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
             });
+
+
 
             services.AddSwaggerGen(c =>
             {

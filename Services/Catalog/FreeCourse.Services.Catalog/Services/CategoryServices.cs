@@ -1,8 +1,9 @@
-﻿using AutoMapper;
-using FreeCource.Shared.Dtos;
+﻿
+using AutoMapper;
 using FreeCourse.Services.Catalog.Dtos;
 using FreeCourse.Services.Catalog.Models;
 using FreeCourse.Services.Catalog.Settings;
+using FreeCourse.Shared.Dtos;
 using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Threading.Tasks;

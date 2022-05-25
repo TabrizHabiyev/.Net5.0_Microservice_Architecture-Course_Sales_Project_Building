@@ -1,6 +1,8 @@
-﻿using FreeCource.Shared.Dtos;
+﻿
+
 using FreeCourse.Services.Catalog.Dtos;
 using FreeCourse.Services.Catalog.Models;
+using FreeCourse.Shared.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
